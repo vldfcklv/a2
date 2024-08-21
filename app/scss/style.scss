@@ -1,0 +1,364 @@
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "global";
+
+.header {
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 48px;
+  }
+}
+
+.menu {
+  font-family: "Atyp Display";
+  &__list {
+    display: flex;
+    gap: 0 48px;
+    margin-left: 79px;
+  }
+  &__list-link {
+    color: #7a7a7a;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.user-nav {
+  margin-left: 79px;
+  display: flex;
+  align-items: center;
+  gap: 0 12px;
+  &__phone {
+    border: 1px solid #a99b91;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__btn {
+    border: 1px solid #a99b91;
+    border-radius: 30px;
+    padding: 14px 24px 10px 24px;
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 24px;
+  }
+}
+
+.top {
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(../images/eclipse.svg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    padding-top: 35px;
+  }
+
+  &__big {
+    position: relative;
+    left: 19px;
+  }
+  &__big-img {
+    border-radius: 230px 230px 0px 0px;
+  }
+  &__small {
+    position: relative;
+    top: 115px;
+  }
+  &__small-img {
+    border-radius: 120px 120px 0px 0px;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 364px;
+    position: relative;
+    left: -40px;
+  }
+  &__logo {
+    margin-bottom: 29px;
+  }
+  &__content-title {
+    font-family: "Elanor";
+    font-size: 64px;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 0.05em;
+    line-height: 65px;
+  }
+}
+
+.scroll-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 131px;
+  &__link {
+    width: 50px;
+    height: 49px;
+    border: 1px solid #a99b91;
+    border-radius: 50%; /* Делаем элемент кругом */
+    border-top-color: transparent;
+    background-color: transparent; /* Цвет круга */
+    display: flex;
+    justify-content: center;
+    position: absolute;
+  }
+  &__img {
+    position: relative;
+    top: -15px;
+  }
+}
+
+.about {
+  padding-top: 130px;
+  padding-bottom: 167px;
+  &__top {
+    display: flex;
+  }
+
+  &__top-title {
+    font-family: "Elanor";
+    text-transform: uppercase;
+    line-height: 56px;
+    font-size: 48px;
+    color: #ffffff;
+    margin-bottom: 45px;
+    letter-spacing: 0.05em;
+  }
+
+  &__top-text {
+    font-family: "Atyp Display";
+    font-weight: 280;
+    color: #ffffff;
+    margin-left: 10px;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    margin-bottom: 64px;
+    width: 512px;
+  }
+
+  &__top-img {
+    max-height: 308px;
+    border-radius: 0px 154px 154px 0px;
+    position: absolute;
+    z-index: -1;
+    left: 830px;
+  }
+  &__btn {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+  }
+  &__btn-circle {
+    left: -7px;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #a99b91;
+    border-radius: 50%; /* Делаем элемент кругом */
+    border-left-color: transparent;
+    background-color: transparent; /* Цвет круга */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Центрируем стрелку внутри круга */
+  }
+  &__btn-text {
+    font-family: "Atyp Display";
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 0.07em;
+  }
+
+  &__bottom {
+    display: flex;
+    margin-top: 120px;
+  }
+  &__bottom-img {
+    height: 100%;
+    border-radius: 208px 0px 0px 208px;
+  }
+  &__bottom-title {
+    font-family: "Elanor";
+    text-transform: uppercase;
+    line-height: 56px;
+    font-size: 48px;
+    color: #ffffff;
+    margin-bottom: 21px;
+    letter-spacing: 0.05em;
+  }
+  &__bottom-text {
+    font-family: "Atyp Display";
+    font-weight: 280;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    margin-bottom: 34px;
+    width: 551px;
+  }
+  &__bottom-list {
+    margin-left: 43px;
+    list-style: disc !important;
+  }
+  &__bottom-item {
+    font-family: "Atyp Display";
+    font-weight: 500;
+    line-height: 36px;
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+  }
+
+  &__bottom-item::marker {
+    color: #c4c4c4;
+    font-size: 0.5em;
+  }
+}
+
+.services {
+  padding-bottom: 164px;
+  &__title {
+    font-family: "Elanor";
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #a99b91;
+    align-items: center;
+  }
+
+  &__info:last-child {
+    border-bottom: 1px solid #a99b91;
+  }
+
+  &__info-title {
+    font-family: "Elanor";
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: uppercase;
+    color: #a99b91;
+    padding-top: 34px;
+    padding-bottom: 24px;
+    flex-basis: 360px;
+    margin-left: 24px;
+    letter-spacing: 0.05em;
+  }
+  &__info-text {
+    flex-basis: 400px;
+    padding-bottom: 0 26px;
+    font-weight: 280;
+    color: #fff;
+    letter-spacing: 0.04em;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+  }
+  &__btn-text {
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 0.07em;
+  }
+
+  &__btn-circle {
+    left: -7px;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #a99b91;
+    border-radius: 50%; /* Делаем элемент кругом */
+    border-left-color: transparent;
+    background-color: transparent; /* Цвет круга */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.team {
+
+  &__inner{
+    background-image: url(../images/team-bg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__title{
+    font-family: "Elanor";
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 45px;
+  }
+
+  &__slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 19px;
+  }
+  &__slider-item{
+    text-align: center;
+    align-items: center;
+  }
+
+  &__slider-title{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  &__slider-description{
+    font-size: 14px;
+    font-weight: 280;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+  }
+  &__slider-image {
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 200px 200px 0px 0px;
+    position: relative;
+    margin-bottom: 25px;
+  }
+  &__slider-image::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(0deg, #101010 0%, rgba(16, 16, 16, 0) 49.85%),
+      url();
+  }
+}
